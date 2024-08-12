@@ -1,0 +1,521 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+nav {
+position: fixed;
+top: 0;
+width: 100%;
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+z-index: 1000;
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav .logo {
+font-size: 35px;
+font-weight: bold;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: black; /* Default color */
+transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav .menu-icon {
+margin-top: -27px;
+width: 29px;
+height: 40px;
+
+margin-left: -80px;
+cursor: pointer;
+font-size: 48px;
+transition: filter 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+nav:hover {
+background-color: black; /* Change background to black on hover */
+}
+
+nav:hover .logo {
+color: white; /* Change logo color to white on hover */
+}
+
+nav:hover .menu-icon {
+
+color: white;
+}
+
+.section1 .content {
+    padding: 100px 20px 20px 20px; /* Adjust padding to account for the fixed nav bar */
+    height: 600px;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #555;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.section1 p {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    
+   
+}
+
+.section2 {
+    padding: 100px 20px 20px 20px; /* Adjust padding to account for the fixed nav bar */
+    height: 400px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    font-size: 40px;
+}
+
+.hero-content {
+    margin-left: 850px;
+}
+
+.buttonS2 {
+    margin-top: 10px;
+    padding: 10px 50px;
+    background-color: #999;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card2 {
+    background-color: #999;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    right: -100pxpx;
+    top: 800px;
+    bottom: -500px;
+    width: 47%; /* Adjust the width to control how far it extends */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section3 {
+    padding: 100px 20px 20px 20px;
+    height: 400px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    font-size: 40px;
+}
+
+.hero-content3 {
+    margin-left: 150px;
+}
+
+.card3 {
+    background-color: #999;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 1300px;
+    bottom: -950px;
+    width: 50%; /* Adjust the width to control how far it extends */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section4 {
+    background-color: #e4e4e4;
+    height: 750px;
+}
+.section4 .select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 93%; /* Change to 100% to make it full width */
+    max-width: 4000px; /* Increase max-width to make it slightly wider */
+    border-style: none;
+    
+    
+}
+
+.select{
+   
+   font-size: 20px;
+   border-radius: 0px;
+   width: 350px; /* Increase width of the select element */
+   text-align: center; /* Center the text inside the select */
+  /* For some browsers to center the selected option */
+   padding: 10px;          /* Remove default styling */
+   box-shadow: none;          /* Remove any box shadow */
+   border:none;
+   
+}
+
+.select option {
+    display: flex;
+    text-align: center;
+    box-shadow: none;
+    
+}
+
+.select option[disabled] {
+    display: none;
+}
+
+/* Style for when no option is selected */
+.select:required:invalid {
+    color: inherit;
+}
+
+/* Style for when an option is selected */
+.select option:not([disabled]) {
+    color: black;
+}
+
+
+.select:hover {
+    background-color: white;   /* Keep the background color the same on hover */
+    cursor: pointer;
+}
+.select option:hover {
+    background-color: white;
+}
+
+
+.square1{
+position:relative;
+width: 200px;
+height: 280px;
+margin: 20px; 
+background-color: #999;;
+top:-90px ;
+left:200px;
+}
+
+.square2{
+position:relative;
+width: 200px;
+height: 280px;
+margin: 20px; 
+background-color: #999;;
+top:-180px ;
+left:560px;
+}
+
+.square3{
+position:relative;
+width: 200px;
+height: 280px;
+margin: 20px; 
+background-color: #999;;
+top: -690px;
+left:915px;}
+
+.square4{
+position:relative;
+width: 200px;
+height: 230px;
+margin: 20px; 
+background-color: #999;
+top: -680px;
+left: 165px;}
+
+.square5{
+position:relative;
+width: 350px;
+height: 230px;
+margin: 20px; 
+background-color: #999;;
+top: -927px;
+left: 810px;}
+
+.square-content h2, .square-content p{ 
+font-size: 18px;
+color: #fff;
+margin-left: 30px;
+height: 50px;
+}
+.square-content5 h2, .square-content5 p{ 
+font-size: 18px;
+color: #fff;
+margin-left: 30px;
+height: 50px;
+}
+
+.square-content h2{
+    font-size: 22px;
+    padding-top: 40px;
+    
+}
+    
+
+.square-content5 h2{
+    font-size: 22px;
+    padding-top: 40px;
+}
+
+
+.square-content5 h2, .square-content5 p{
+    color: #fff;
+    margin-left: 30px;
+   
+}
+
+.square-content p{
+    font-size: 15px;
+}
+
+.square-content5 p{
+    font-size: 15px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#overlayTitle {
+    font-size: 24px;
+    text-align: center;
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.section5 {
+    margin-top: 40px;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.card-container5 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #999;;
+    padding: 30px;
+    margin: 38px;
+    flex: 1 1 200px; /* Flex item with a minimum width of 200px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px; /* Ensures all cards have the same height */
+}
+
+.card h3 {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 20px; /* Ensures uniform spacing between the heading and paragraph */
+}
+
+.card p {
+font-size: 14px;
+color: white;
+flex-grow: 1; /* Ensures the paragraph takes up available space */
+margin-bottom: 10px; /* Reduce this value to bring the button closer */
+}
+
+.buttonS5 {
+padding: 10px 50px;
+background-color: white;
+font-size: 14px;
+font-weight: bold;
+color: #999;;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+align-self: flex-start;
+margin-top: 0; /* Ensures there's no gap between the button and the paragraph */
+}
+
+.section6{
+position: relative;
+height: 1100px;
+overflow: hidden;
+background-color: rgb(235, 235, 235);
+}
+
+.rectangle {
+position:relative;
+width: 300px;
+height: 200px;
+margin: 20px;
+z-index: 1;
+
+
+}
+.rectangle:nth-child(1) {
+background-color:#999;;
+top: 95px;
+left: 40px;
+
+}
+.rectangle:nth-child(2) {
+background-color:white;
+top: 25px;
+left: 230px;
+}
+.rectangle:nth-child(3) {
+background-color: #999;;
+top: -50px;
+left: 410px;
+}
+.rectangle:nth-child(4) {
+background-color: #ffffff;
+top: -130px;
+left: 600px;    
+}
+
+.rectangle:nth-child(5) {
+background-color: #999;;
+top: -200px;
+left: 800px;   
+}
+
+.rectangle:nth-child(6) {
+background-color:#ffffff;
+top: -278px;
+left: 1000px;    
+}
+
+.large-rectangle {
+position: absolute;
+width: 1000px;
+height: 600px;
+background-color: #e4e4e4;
+top: 50%;
+left: 50%; 
+transform:translate(-50%, -50%);
+z-index: 0;   
+}
+
+.menu-items{
+display: none;
+position: fixed;
+top: 60px;
+right: 0;
+background-color: white;
+border: 1px solid #ddd;
+border-top: none;
+width: 500px;
+color: #5f5c5c;
+z-index: 1000;
+}
+.menu-items.show {
+display: block;
+}
+.menu-item{
+padding: 10px 20px;
+border-bottom: 1px solid #ddd;
+cursor: pointer;
+}
+.menu-item :last-child {
+border-bottom: none;
+}
+
+.menu-icon{
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+.overlay-content h2{
+    font-size: 24px;
+    margin: 0;
+}
